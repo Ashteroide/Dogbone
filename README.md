@@ -1,27 +1,5 @@
-Dogbone addin for fusion 360
+Dogbone Addin for Fusion360
 ===
-
-## Version: 2.0
-
-* **Windows users:**
-
-   * You can download a self extracting file [here](https://github.com/DVE2000/Dogbone/releases/download/v2.0/winsetup_Dogbone_v2_0.exe) 
-
-* **Mac users:**
-
-   **Note: RuntimeError: 2 : InternalValidationError : isExist**
-   
-   A recent OS update has enforced case sensitive Folder and File names, and it has revealed an inconsistent capitalization of the folder named Resource.  The easiest method of correcting the error is to change **R**esource to **r**esource in the dogbone directory (generally found here: "/Users/\<your username\>/Library/Application Support/Autodesk/Autodesk Fusion 360/APl/Addlns/Dogbone")  
-
-   * If you installed F360 directly from AD - download self extracting file [here](https://github.com/DVE2000/Dogbone/releases/download/v2.0/macSetup_AD_dogbone_v2_0.pkg)
-
-   * If you installed F360 from Apple App Store - download self extracting file [here](https://github.com/DVE2000/Dogbone/releases/download/v2.0/macSetup_appstore_dogbone_v2_0.pkg)
-
-   If you're having problems due to Apple Security, instead of clicking in the Downloads Dock icon Folder or Stack, click "Open in Finder" and then right-click the package and select "Open". You'll be able to install it then.
-
-
-
-zip and tar files available (for both Mac and Windows) [here](https://github.com/DVE2000/Dogbone/releases)
 
 ---
 
@@ -37,22 +15,6 @@ Minimal dogbone | Long side mortise dogbone            | Short side mortise dogb
 This addin includes 3 dogbone styles (normal, minimal and mortise) and allows dogbones to be cut from either the topface or selected face.  Both static and parametric options are available - however due to a number of bugs in F360, parametric will fail on mirrored components and some component copies.  These bugs have been reported (see [here](https://forums.autodesk.com/t5/fusion-360-api-and-scripts/4-bugs-at-least-related-to-occurrences/m-p/8105766#M6240)), but as of writing AD has not addressed them.
 
 The interface has been improved, and specifically allows any face orientation to be chosen on any component.  The addin is based on the f360 primitive hole feature, and is as efficient as f360 single threaded engine allows.  In Static mode it will create 70 dogbones in about 7 seconds.  Parametric mode takes a little longer to calculate initially, but recalculation is very fast if you change your model parameters.  Of course, speed also depends on the processing power of your computer.
-
----
-
-## Notes:
-
-This version should work with all static dogbones. Parameterized dogbones mostly work, but there are definite issues with the Fusion360 API that may cause problems when trying to create dogbones. If that happens, you can create a logfile and post it here to let us know. If it turns out that it **is** a Fusion360 bug, please report it to Autodesk.
-
----
-
-Dogbones has been completed revamped. Some of the original utilities have remained, as well as some original mathematical formulaes, but mostly everything else has changed.
-
-The original add-in was based on creating sketches and extruding - Peter found using this approach to be very heavy on processing resources, so this version has been designed to create dogbones directly by using a hole tool.
-
----
-
-**This version should work with all static dogbones. Parameterized dogbones mostly work, but there are definite issues with the Fusion360 API that may cause problems when trying to create dogbones. If that happens, you can create a logfile and post it here to let us know. If it turns out that it **is** a Fusion360 bug, please report it to Autodesk.**
 
 ---
 
